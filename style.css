@@ -1,0 +1,163 @@
+/* General Styles */
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif"
+}
+
+body {
+    background-color: #656D4A;
+    text-align: center;
+	padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* Header */
+header {
+    background-color: #EDE0D4;
+	padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.primary-header img {
+    width: 150px;
+}
+
+.second-header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.second-header a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.second-header a:hover {
+    color: #007bff;
+}
+
+/* About Us Section */
+.about-us-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    text-align: left; /* Ensures content aligns properly within the flex container */
+}
+
+.left_article {
+    flex: 1;
+    max-width: 60%;
+    padding: 15px;
+}
+
+.right_article {
+    flex: 1;
+    max-width: 38%;
+}
+
+.right_article img {
+    width: 100%;
+    border-radius: 8px;
+}
+.gallery-container {
+    overflow: hidden; /* Hide the part of images that overflow */
+    position: relative;
+}
+
+.gallery {
+    display: flex; /* Align images horizontally */
+    animation: rotateGallery 20s infinite; /* Increased duration for slower rotation */
+}
+
+/* Keyframes for rotating gallery */
+@keyframes rotateGallery {
+    0% {
+        transform: translateX(0); /* Start from the first image */
+    }
+    25% {
+        transform: translateX(-100%); /* Move to the second image */
+    }
+    50% {
+        transform: translateX(-200%); /* Move to the third image */
+    }
+    75% {
+        transform: translateX(-300%); /* Move to the fourth image */
+    }
+    100% {
+        transform: translateX(0); /* Loop back to the first image */
+    }
+}
+
+
+/* Stay in Touch Section */
+.stay-in-touch {
+    background-color: #EDE0D4;
+	padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.stay-in-touch input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.stay-in-touch button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #414833;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stay-in-touch button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
